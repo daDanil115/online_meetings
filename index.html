@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн Встречи</title>
+    <link rel="stylesheet" href="style.css"> <!-- Подключаем CSS файл для стилизации -->
+</head>
+<body>
+
+    <header>
+        <h1>Онлайн Встречи</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Создать встречу</a></li>
+                <li><a href="#">Присоединиться к встрече</a></li>
+                <li><a href="#">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Добро пожаловать на платформу для онлайн-встреч!</h2>
+            <p>Проводите встречи, общайтесь и сотрудничайте, где бы вы ни находились.</p>
+            <button id="createMeetingButton">Создать встречу</button>
+            <button id="joinMeetingButton">Присоединиться к встрече</button>
+        </section>
+
+        <section id="meetingCreation" style="display:none;">
+            <h2>Создать встречу</h2>
+            <label for="meetingName">Название встречи:</label>
+            <input type="text" id="meetingName" name="meetingName"><br><br>
+            <label for="userName">Ваше имя:</label>
+            <input type="text" id="userName" name="userName"><br><br>
+            <button id="startMeeting">Начать встречу</button>
+        </section>
+
+        <section id="meetingJoining" style="display:none;">
+            <h2>Присоединиться к встрече</h2>
+            <label for="meetingCode">Код встречи:</label>
+            <input type="text" id="meetingCode" name="meetingCode"><br><br>
+            <label for="userNameJoin">Ваше имя:</label>
+            <input type="text" id="userNameJoin" name="userNameJoin"><br><br>
+            <button id="joinExistingMeeting">Присоединиться</button>
+        </section>
+
+        <section id="features">
+            <h2>Наши Преимущества</h2>
+            <div class="feature">
+                <h3>Высокое качество видео</h3>
+                <p>Наслаждайтесь кристально чистым видео и звуком для комфортного общения.</p>
+            </div>
+            <div class="feature">
+                <h3>Простота использования</h3>
+                <p>Интуитивно понятный интерфейс позволяет быстро организовывать и проводить встречи.</p>
+            </div>
+            <div class="feature">
+                <h3>Безопасность и конфиденциальность</h3>
+                <p>Мы обеспечиваем защиту ваших данных и конфиденциальность ваших встреч.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Онлайн Встречи. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Подключаем JavaScript файл для интерактивности -->
+</body>
+</html>
